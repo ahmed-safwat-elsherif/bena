@@ -14,12 +14,8 @@ export default {
         center: true,
         padding: {
           DEFAULT: "1rem",
+          lg: "4rem",
         },
-        // screens: {
-        //   sm: "600px",
-        //   md: "900px",
-        //   lg: "1300px",
-        // },
       },
       colors: {
         babyblue: {

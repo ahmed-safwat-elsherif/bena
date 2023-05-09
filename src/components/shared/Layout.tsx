@@ -2,9 +2,9 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Layout = ({ children }: React.PropsWithChildren) => (
-  <div className="flex flex-col bg-babyblue-light min-h-[100vh]" dir="rtl">
+  <div className="flex min-h-[100vh] flex-col bg-babyblue-light" dir="rtl">
     <Navbar />
-    <main className="flex-1 min-h-[1500px] container mx-auto">{children}</main>
+    <main className="min-h-[1500px] flex-1 ">{children}</main>
     <Footer />
   </div>
 );

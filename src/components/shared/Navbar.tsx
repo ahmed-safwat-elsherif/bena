@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import MainNavbar from "./MainNavbar";
 import UpperNavbar from "./UpperNavbar";
 
-const scrollThreshold = 30;
+const scrollThreshold = 10;
 
 const Navbar = () => {
   const navbarRef = useRef<HTMLElement>(null);
@@ -13,9 +13,9 @@ const Navbar = () => {
       if (!navbarRef.current) return;
 
       if (window.scrollY > scrollThreshold) {
-        navbarRef.current.classList.add("shadow-md");
+        navbarRef.current.classList.add("shadow-md", "bg-white");
       } else {
-        navbarRef.current.classList.remove("shadow-md");
+        navbarRef.current.classList.remove("shadow-md", "bg-white");
       }
     };
     window.addEventListener("scroll", handleShadowOnScroll);
@@ -25,10 +25,12 @@ const Navbar = () => {
   return (
     <header
       ref={navbarRef}
-      className="min-h-[30px] bg-babyblue-light py-3 transition-[0.3s_box-shadow_ease-out] sticky top-0"
+      className="sticky top-0 z-50 min-h-[30px] bg-babyblue-light py-3 transition duration-300"
     >
-      <UpperNavbar />
-      <MainNavbar />
+      <div>
+        <UpperNavbar />
+        <MainNavbar />
+      </div>
     </header>
   );
 };

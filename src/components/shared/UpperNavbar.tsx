@@ -2,7 +2,7 @@ import { ReactComponent as ArrowDownIcon } from "../../svg/icon-arrow-down.svg";
 
 const UpperNavbar = () => {
   return (
-    <nav className="container flex max-w-[1300px] justify-end space-x-3 text-[14px] rtl:space-x-reverse">
+    <nav className="container flex justify-end space-x-3 text-[14px] rtl:space-x-reverse">
       <div className="text-babyblue-dark ">
         <span>اتصل بنا</span>
       </div>

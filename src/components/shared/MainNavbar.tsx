@@ -2,7 +2,7 @@ import { ReactComponent as AppLogo } from "../../svg/app-logo.svg";
 
 const MainNavbar = () => {
   return (
-    <nav className="container flex max-w-[1300px] items-center justify-between">
+    <nav className="container flex items-center justify-between">
       <div className="flex items-center space-x-2 rtl:space-x-reverse">
         <AppLogo width={60} />
         <span className="text-[1.5rem] font-bold text-babyblue-dark">
