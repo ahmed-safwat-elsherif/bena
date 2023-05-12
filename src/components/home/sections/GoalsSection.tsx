@@ -58,7 +58,7 @@ const GoalsSection = () => {
             {({ targetRef, inViewPort }) => (
               <div
                 ref={targetRef}
-                className="flex grow justify-center divide-x text-white rtl:divide-x-reverse"
+                className="flex grow flex-col justify-center divide-x-0 text-white rtl:divide-x-reverse md:flex-row md:divide-x"
               >
                 {goals.map((goal) => (
                   <GoalCard inViewPort={inViewPort} {...goal} />

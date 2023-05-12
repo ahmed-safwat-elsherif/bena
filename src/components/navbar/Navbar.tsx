@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <header
       ref={navbarRef}
-      className="sticky top-0 z-50 min-h-[30px] bg-babyblue-light py-3 transition duration-300"
+      className="sticky top-0 z-50 min-h-[30px] bg-babyblue-light transition duration-300 md:py-3"
     >
       <div>
         <UpperNavbar />

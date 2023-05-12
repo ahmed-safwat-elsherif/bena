@@ -1,5 +1,5 @@
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "../navbar/Navbar";
 
 const Layout = ({ children }: React.PropsWithChildren) => (
   <div className="flex min-h-[100vh] flex-col bg-babyblue-light" dir="rtl">

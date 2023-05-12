@@ -21,7 +21,7 @@ const HeroSection = () => {
                 مبادرة بينا
               </span>
               <span
-                className={`text-[1.5rem] transition delay-[1000ms] duration-1000 ${
+                className={`text-[1.5rem] transition delay-1000 duration-1000 ${
                   inViewPort
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-10 opacity-0"
@@ -30,12 +30,20 @@ const HeroSection = () => {
                 بـيـنـا بـكـرا احــلــى
               </span>
             </h1>
-            <p className="max max-w-lg text-[1rem]">
+            <p
+              className={`max max-w-lg text-[1rem] transition-[opacity] delay-[2000ms] duration-1000 ${
+                inViewPort ? "opacity-100" : "opacity-0"
+              }`}
+            >
               هي مبادرة أطلقتها وزارة التضامن الإجتماعي لرفع وتحسين جودة الخدمات
               التي تقدمها مؤسسات الرعاية الإجتماعية من خلال متطوعين لتفعيل دور
               المسؤولية والمراقبة المجتمعية.
             </p>
-            <div>
+            <div
+              className={`transition-[opacity] delay-[2500ms] duration-1000 ${
+                inViewPort ? "opacity-100" : "opacity-0"
+              }`}
+            >
               <Button>المزيد</Button>
             </div>
           </div>
