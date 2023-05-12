@@ -14,8 +14,8 @@ const HeroSection = () => {
               <span
                 className={`leading-[4rem] transition delay-100 duration-1000 ${
                   inViewPort
-                    ? "translate-x-0 opacity-100"
-                    : "translate-x-10 opacity-0"
+                    ? "sm:translate-x-0 sm:opacity-100"
+                    : "sm:translate-x-10 sm:opacity-0"
                 }`}
               >
                 مبادرة بينا
@@ -23,8 +23,8 @@ const HeroSection = () => {
               <span
                 className={`text-[1.5rem] transition delay-1000 duration-1000 ${
                   inViewPort
-                    ? "translate-x-0 opacity-100"
-                    : "-translate-x-10 opacity-0"
+                    ? "sm:translate-x-0 sm:opacity-100"
+                    : "sm:-translate-x-10 sm:opacity-0"
                 }`}
               >
                 بـيـنـا بـكـرا احــلــى
@@ -32,7 +32,7 @@ const HeroSection = () => {
             </h1>
             <p
               className={`max max-w-lg text-[1rem] transition-[opacity] delay-[2000ms] duration-1000 ${
-                inViewPort ? "opacity-100" : "opacity-0"
+                inViewPort ? "sm:opacity-100" : "sm:opacity-0"
               }`}
             >
               هي مبادرة أطلقتها وزارة التضامن الإجتماعي لرفع وتحسين جودة الخدمات
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </p>
             <div
               className={`transition-[opacity] delay-[2500ms] duration-1000 ${
-                inViewPort ? "opacity-100" : "opacity-0"
+                inViewPort ? "sm:opacity-100" : "sm:opacity-0"
               }`}
             >
               <Button>المزيد</Button>

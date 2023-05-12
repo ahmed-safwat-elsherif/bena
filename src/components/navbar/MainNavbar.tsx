@@ -1,12 +1,16 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as AppLogo } from "../../svg/app-logo.svg";
 import translation from "../../assets/translation.json";
 import HamburgerButton from "./HamburgerButton";
 import Navlinks from "./Navlinks";
 
-const MainNavbar = () => {
-  const [openDrawer, setOpenDrawer] = useState(false);
+type MainNavbarProps = {
+  openDrawer: boolean;
+  setOpenDrawer: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const MainNavbar = (props: MainNavbarProps) => {
+  const { openDrawer, setOpenDrawer } = props;
 
   return (
     <nav className="container flex items-center justify-between">
