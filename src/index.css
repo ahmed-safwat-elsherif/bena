@@ -6,4 +6,16 @@
   body {
     font-family: "El Messiri", sans-serif;
   }
+  body::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* color of the track */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: theme("colors.babyblue.darker"); /* color of the thumb */
+    border-radius: 6px; /* roundness of the thumb */
+  }
 }

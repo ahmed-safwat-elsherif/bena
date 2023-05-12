@@ -11,40 +11,35 @@ const goals = [
   {
     icon: <HomeIcon width={50} />,
     description: "تطوير جودة الخدمات المقدمة في مؤسسات الرعاية الإجتماعية..",
-    transitionDelay: "delay-0",
     key: "HOME",
   },
   {
     icon: <FlagIcon width={50} />,
     description: " القضاء على كل صور الانتهاكات.",
-    transitionDelay: "delay-[500ms]",
     key: "FLAG",
   },
   {
     icon: <EncourageIcon width={50} />,
     description:
       "تشجيع المواطنين على التطوع من أجل دعم تطوير مؤسسات الرعاية المختلفة ورصد حالات الانتهاكات الموجودة بهذه المؤسسات وإبلاغ الوزارة بها.",
-    transitionDelay: "delay-[1000ms]",
     key: "ENCOURAGE",
   },
   {
     icon: <ResourcesIcon width={50} />,
     description: "إدارة الموارد الاجتماعية بشكل فعال.",
-    transitionDelay: "delay-[1500ms]",
     key: "RESOURCES",
   },
   {
     icon: <SupportIcon width={50} />,
     description:
       "تدعيم مفهوم المساءلة الإجتماعية بطريقة تتمتع بالنزاهة والشفافية.",
-    transitionDelay: "delay-[2000ms]",
     key: "SUPPORT",
   },
 ];
 
 const GoalsSection = () => {
   return (
-    <section className="bg-babyblue-dark py-3">
+    <section className="bg-babyblue-dark py-20">
       <div className="container">
         <div className="flex flex-col space-y-20">
           <ElementInViewPort>

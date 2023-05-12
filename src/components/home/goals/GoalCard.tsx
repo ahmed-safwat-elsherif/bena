@@ -2,7 +2,6 @@ type GoalCardProps = {
   icon: React.ReactNode;
   inViewPort: boolean;
   description: string;
-  transitionDelay: string;
 };
 
 const GoalCard = ({ icon, inViewPort, description }: GoalCardProps) => {
