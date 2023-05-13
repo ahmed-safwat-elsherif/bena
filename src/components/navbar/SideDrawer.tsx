@@ -32,6 +32,7 @@ const SideDrawer = (props: SideDrawerProps) => {
           <Link
             to="/"
             className="flex items-center space-x-2 rtl:space-x-reverse"
+            onClick={() => setOpen(false)}
           >
             <AppLogo className="w-[3rem]" />
             <span className="text-[1.5rem] font-bold text-babyblue-dark">
@@ -46,14 +47,23 @@ const SideDrawer = (props: SideDrawerProps) => {
           >
             <ArrowLeftIcon />
           </button>
-          <ul className="flex flex-col items-center justify-center divide-y divide-babyblue-dark">
+          {/* <ul
+            className={`relative flex flex-col justify-center divide-y divide-babyblue-dark before:absolute before:top-0 before:h-[3px] before:w-4 before:rounded-md before:bg-babyblue-darker before:transition before:delay-500 before:duration-700 before:content-[''] after:absolute after:bottom-0 after:h-[3px] after:w-4 after:rounded-md after:bg-babyblue-darker after:transition after:delay-500 after:duration-700 after:content-[''] ${
+              open
+                ? "before:left-0 after:right-0"
+                : "before:right-0 after:left-0"
+            }`}
+          > */}
+          <ul className="flex flex-col justify-center divide-y divide-babyblue-dark">
             {navlinks.map(({ label, ...link }) => (
               <li
                 key={label}
                 onClick={() => setOpen(false)}
                 className="py-3 text-[1.5rem]"
               >
-                <Link {...link}>{label}</Link>
+                <Link {...link} className="block text-center">
+                  {label}
+                </Link>
               </li>
             ))}
           </ul>
