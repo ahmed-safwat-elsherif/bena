@@ -1,11 +1,17 @@
-import Layout from "./components/shared/Layout";
-import Home from "./pages/Home";
+import { Suspense } from "react";
+import LayoutProvider from "./providers/LayoutProvider";
+import routes from "./routes";
+import mapRoutes from "./utils/mapRoutes";
+import { Routes } from "react-router-dom";
+import LoaderScreen from "./components/shared/LoaderScreen";
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <LayoutProvider>
+      <Suspense fallback={<LoaderScreen />}>
+        <Routes>{mapRoutes(routes)}</Routes>
+      </Suspense>
+    </LayoutProvider>
   );
 }
 
