@@ -4,13 +4,13 @@ import ElementInViewPort from "../../shared/ElementInViewPort";
 const VisitSection = () => {
   return (
     <section className="container">
-      <div className="flex space-x-3 border-t border-babyblue-dark pt-[10rem] rtl:space-x-reverse">
+      <div className="flex flex-col space-x-0 space-y-6 border-t border-babyblue-dark pt-[10rem] rtl:space-x-reverse md:flex-row md:space-x-3 md:space-y-0">
         <ElementInViewPort>
           {({ targetRef, inViewPort }) => (
             <>
               <div
                 ref={targetRef}
-                className={`flex h-[300px] flex-1 items-center justify-center border-2 border-babyblue-dark transition duration-500 ${
+                className={`flex min-h-[300px] flex-1 items-center justify-center border-2 border-babyblue-dark transition duration-500 ${
                   inViewPort ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -28,7 +28,7 @@ const VisitSection = () => {
                   زيارة لعدد ٦٠ ابن وابنه من دور الرعاية الاجتماعية للمتحف
                   القومى للحضارات
                 </h3>
-                <div className="flex h-[100%] flex-col items-start justify-between">
+                <div className="flex h-[100%] flex-col items-start justify-between space-y-5">
                   <div
                     className={`text-sm transition delay-300 duration-500 ${
                       inViewPort
