@@ -4,10 +4,20 @@ import ElementInViewPort from "../../shared/ElementInViewPort";
 const VisitSection = () => {
   return (
     <section className="container">
-      <div className="flex flex-col space-x-0 space-y-6 border-t border-babyblue-dark pt-[10rem] rtl:space-x-reverse md:flex-row md:space-x-3 md:space-y-0">
+      <div className="flex flex-col space-x-0 space-y-6 border-t border-babyblue-dark pt-[3rem] rtl:space-x-reverse md:flex-row md:space-x-3 md:space-y-0 md:pt-[10rem]">
         <ElementInViewPort>
           {({ targetRef, inViewPort }) => (
             <>
+              <h3
+                className={`block text-[1.5rem] font-bold text-babyblue-dark transition duration-500 md:hidden ${
+                  inViewPort
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-4 opacity-0"
+                }`}
+              >
+                زيارة لعدد ٦٠ ابن وابنه من دور الرعاية الاجتماعية للمتحف القومى
+                للحضارات
+              </h3>
               <div
                 ref={targetRef}
                 className={`flex min-h-[300px] flex-1 items-center justify-center border-2 border-babyblue-dark transition duration-500 ${
@@ -19,7 +29,7 @@ const VisitSection = () => {
 
               <div className="flex flex-1 flex-col">
                 <h3
-                  className={`mb-10 text-[1.5rem] font-bold text-babyblue-dark transition duration-500 ${
+                  className={`mb-10 hidden text-[1.5rem] font-bold text-babyblue-dark transition duration-500 md:block ${
                     inViewPort
                       ? "translate-x-0 opacity-100"
                       : "translate-x-4 opacity-0"

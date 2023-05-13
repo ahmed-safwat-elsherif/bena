@@ -41,12 +41,12 @@ const GoalsSection = () => {
   return (
     <section className="bg-babyblue-dark py-20">
       <div className="container">
-        <div className="flex flex-col space-y-20">
+        <div className="flex flex-col space-y-6 md:space-y-20">
           <ElementInViewPort>
             {({ targetRef, inViewPort }) => (
               <h3
                 ref={targetRef}
-                className={`flex flex-col items-center text-[2.5rem] font-medium text-white after:h-1 after:rounded-sm after:bg-white after:transition after:duration-300 after:content-[''] ${
+                className={`flex flex-col items-center text-[2rem] font-medium text-white after:h-1 after:rounded-sm after:bg-white after:transition after:duration-300 after:content-[''] md:text-[2.5rem] ${
                   inViewPort ? "after:w-20" : "after:w-0"
                 }`}
               >

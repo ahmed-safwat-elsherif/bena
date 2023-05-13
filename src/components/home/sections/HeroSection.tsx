@@ -9,8 +9,8 @@ const HeroSection = () => {
     <ElementInViewPort>
       {({ targetRef, inViewPort }) => (
         <section ref={targetRef} className="relative">
-          <div className="z-1 container relative flex min-h-[550px] flex-1 flex-col justify-center space-y-[50px]">
-            <h1 className="flex flex-col text-[3.5rem] font-bold text-babyblue-dark">
+          <div className="z-1 container relative flex min-h-[550px] flex-1 flex-col items-center justify-center space-y-[50px] md:items-stretch">
+            <h1 className="flex flex-col text-[2rem] font-bold text-babyblue-dark sm:text-[2.5rem] md:text-[3.5rem]">
               <span
                 className={`leading-[4rem] transition delay-100 duration-1000 ${
                   inViewPort
@@ -21,7 +21,7 @@ const HeroSection = () => {
                 مبادرة بينا
               </span>
               <span
-                className={`text-[1.5rem] transition delay-1000 duration-1000 ${
+                className={`text-[1.1rem] transition delay-1000 duration-1000 sm:text-[1.3rem] md:text-[1.5rem] ${
                   inViewPort
                     ? "sm:translate-x-0 sm:opacity-100"
                     : "sm:-translate-x-10 sm:opacity-0"
@@ -31,7 +31,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <p
-              className={`max max-w-lg text-[1rem] transition-[opacity] delay-[2000ms] duration-1000 ${
+              className={`max max-w-lg text-center text-[1rem] transition-[opacity] delay-[2000ms] duration-1000 md:text-start ${
                 inViewPort ? "sm:opacity-100" : "sm:opacity-0"
               }`}
             >
